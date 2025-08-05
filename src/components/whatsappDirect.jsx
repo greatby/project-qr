@@ -12,7 +12,7 @@ export default function WhatsAppRedirect() {
   useEffect(() => {
     const timer = setTimeout(() => {
       window.location.href = whatsappLink;
-    }, 30000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, [whatsappLink]);
 
