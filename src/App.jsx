@@ -1,11 +1,18 @@
 import React from 'react'
 import WhatsAppRedirect from './components/whatsappDirect'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DomainQR from './components/domainQr';
 
 const App = () => {
   return (
-   <>
-   <WhatsAppRedirect />
-   </>
+    <>
+    <Router>
+      <Routes>
+        <Route path="/" element={<WhatsAppRedirect />} />
+      </Routes>
+    </Router>
+    {/* <DomainQR /> */}
+    </>
   )
 }
 
