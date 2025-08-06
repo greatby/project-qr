@@ -84,7 +84,7 @@ export default function CallRedirect() {
         const res = await fetch("/config.json?_=" + Date.now());
         const data = await res.json();
 
-        const phoneNumber = data.phone; // e.g. +919591773588
+        const phoneNumber = data.number; // e.g. +919591773588
         window.location.href = `tel:${phoneNumber}`;
       } catch (error) {
         console.error("Error loading phone number:", error);
