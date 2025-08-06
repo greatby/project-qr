@@ -8,10 +8,10 @@ const App = () => {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<WhatsAppRedirect />} />
+        <Route path="/go" element={<WhatsAppRedirect />} />
       </Routes>
     </Router>
-    {/* <DomainQR /> */}
+    <DomainQR />
     </>
   )
 }
